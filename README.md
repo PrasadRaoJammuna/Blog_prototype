@@ -1,6 +1,6 @@
 # Blog_prototype
 
- 
+ ## It is Just a Prototype of Blog, Its working fine , can you make it pretty for me.####pullrequest
 
 Steps:
 
@@ -22,11 +22,11 @@ Steps:
 
 5)- Clone the code from the repo:
 
---> git clone https://github.com/yashrastogi16/simpletwitter.git
+--> git clone https://github.com/PrasadRaoJammuna/Blog_prototype.git
 
 6)- Install requirements
 
---> cd simpletwitter
+--> cd cd try_django
 --> pip install -r requirements
 
 Note: Above lines are required for first time installation
