@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+<div class='container'>
+
+{% for i in post %}
+
+<h1>{{i.title}}</h1>
+<img src='{{i.images.url}}' width=200px hight=150px><br>
+<b><i>{{i.pub_at}}</i></b>
+<p>{{i.content}}</p>
+
+{% endfor %}
+</div>
+
+{% endblock  %}

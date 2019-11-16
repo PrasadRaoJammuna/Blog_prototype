@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block head_title %}
+Blog
+{% endblock  %}
+
+{% block content %}
+
+{% for post in posts  %}
+<div class='container-fluid'>
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header"><i>{{post.pub_at}}</i></div>
+  <div class="card-body" >
+    <a href="/blog/post_detail/{{post.slug}}/" class="card-link"><img class="card-img-top" src='{{post.images.url}}'> </a>
+    <h5 class="card-title"><h1>{{post.title}}</h1></h5>
+    <p class="card-text"> {{post.content | truncatewords:15 }}</p>
+    <a href="/blog/post_detail/{{post.slug}}/" class="card-link">Read</a>
+  </div>
+</div>
+</div>
+
+
+
+
+
+{% endfor %}
+
+{% endblock  %}

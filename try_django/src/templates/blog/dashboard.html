@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+{% for i in posts %}
+{% if request.user.is_authenticated %}
+<h1>{{i.title}}</h1>
+<button type='sumbit' class='btn btn-info'><a href='/blog/update/{{i.slug}}'/ style='color:white;'>Edit</a></button>
+<button type='sumbit' class='btn btn-danger'><a href='/blog/delete/{{i.slug}}'/ style='color:white;'>Delete</a></button>
+{% if not i.pub_at %}
+<button type='sumbit' class='btn btn-warning' style='color:white;'>Draft</a></button>
+{% else %}
+{% endif %}
+
+{% else %}
+
+
+{% endif %}
+{% endfor %}
+
+
+{% endblock  %}

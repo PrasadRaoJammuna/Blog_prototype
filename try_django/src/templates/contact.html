@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+| Contact us
+{% endblock  %}
+
+{% block content %}
+
+<div class='container'>
+
+<form method='POST',action='.'>{% csrf_token %}
+
+{{form.as_p}}
+<button type='submit'>Send</button>
+
+</form>
+
+
+
+
+</div>
+
+{% endblock  %}
